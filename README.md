@@ -70,4 +70,4 @@ pip install pandas matplotlib prophet scikit-learn joblib
 ---
 
 ## ✅ Author
-This project was implemented for educational purposes to demonstrate end-to-end machine learning pipeline on customer churn dataset.
+This project was implemented for educational purposes to demonstrate end-to-end machine learning pipeline on customer churn dataset by blal shaheen
