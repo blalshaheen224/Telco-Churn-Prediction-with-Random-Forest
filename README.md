@@ -35,7 +35,7 @@ Provides a quick overview of the dataset using `.head()`, `.info()`, `.describe(
 ### 7. `evaluate_model(model, X_test, y_test)`
 - Evaluates model performance using accuracy, confusion matrix, and classification report.
   ![Model confusion_matrix](images/confusion_matrix.PNG)
-  ![Model clasffiction report](images/clasffiction_report.png)
+  ![Model clasffiction report](images/clasffiction_report.PNG)
 
 ### 8. `save_model_bundle(model, encoders)`
 - Saves both the trained model and all LabelEncoders using `joblib` in a single file.
