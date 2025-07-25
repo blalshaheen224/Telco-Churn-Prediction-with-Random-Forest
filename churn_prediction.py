@@ -70,8 +70,14 @@ def model_training(df):
 def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)
     print("Accuracy:", accuracy_score(y_test, y_pred))
-    print(confusion_matrix(y_test, y_pred))
     cm = confusion_matrix(y_test, y_pred)
+    plt.figure(figsize=(6, 4))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=["No Churn", "Churn"], yticklabels=["No Churn", "Churn"])
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.title("Confusion Matrix Heatmap")
+    plt.tight_layout()
+    plt.show()
     print(classification_report(y_test, y_pred))
    
 def save_model_bundle(model, encoders, path='model_bundle.pkl'):
